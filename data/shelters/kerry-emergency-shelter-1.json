@@ -1,0 +1,16 @@
+{
+  "id": "kerry-emergency-shelter-1",
+  "name": "Emergency Shelter (Iveragh Peninsula)",
+  "type": "emergency",
+  "lat": 52.001797,
+  "lon": -9.736134,
+  "county": "Kerry",
+  "region": "ROI",
+  "status": "unverified",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/186012730", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "186012730",
+  "osm_type": "way",
+  "notes": "Surfaced via Overpass query as an unnamed way literally tagged name=\"Emergency Shelter\", shelter_type=weather_shelter. No operator, access, or trail association recorded in OSM — exact location context (which trail, whose land) needs in-person verification before this is more than a pin on a map."
+}

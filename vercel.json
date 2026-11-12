@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pip install -r scripts/requirements.txt && python3 scripts/build_geojson.py && cd site && npm install && npm run build",
+  "outputDirectory": "site/dist",
+  "installCommand": "echo 'handled by buildCommand'"
+}

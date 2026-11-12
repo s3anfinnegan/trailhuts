@@ -1,0 +1,21 @@
+{
+  "name": "trailhuts-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:data": "python3 ../scripts/build_geojson.py",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "maplibre-gl": "^4.7.1",
+    "pmtiles": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.14",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

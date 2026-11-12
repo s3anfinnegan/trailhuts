@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>TrailHuts — trail shelters of Ireland</title>
+    <meta name="description" content="A map of lean-to shelters, bothies, and emergency shelters across the island of Ireland." />
+  </head>
+  <body>
+    <div id="splash">
+      <img src="/src/icons/logo.svg" alt="TrailHuts" width="160" height="43" />
+      <div id="splash-status">Loading shelters…</div>
+    </div>
+
+    <div id="app">
+      <header id="header">
+        <img class="logo" src="/src/icons/logo.svg" alt="TrailHuts" width="110" height="29" />
+        <div id="search-wrap">
+          <input id="search-input" type="search" placeholder="Search by name or county…" autocomplete="off" />
+        </div>
+        <button id="count-button" type="button" aria-label="Show shelter count">
+          <span id="count-value">0</span> shelters
+        </button>
+      </header>
+
+      <div id="filters">
+        <div id="type-chips" role="group" aria-label="Filter by shelter type">
+          <button class="chip" data-type="lean_to" type="button">Lean-to</button>
+          <button class="chip" data-type="bothy" type="button">Bothy</button>
+          <button class="chip" data-type="emergency" type="button">Emergency</button>
+        </div>
+
+        <select id="region-select" aria-label="Filter by region">
+          <option value="">All Ireland</option>
+          <option value="ROI">Republic of Ireland</option>
+          <option value="NI">Northern Ireland</option>
+        </select>
+
+        <label id="has-photo-toggle">
+          <input type="checkbox" id="has-photo-checkbox" />
+          <span>Has photo</span>
+        </label>
+      </div>
+
+      <main id="map">
+        <div id="map-controls">
+          <div id="layer-switcher" role="group" aria-label="Map layer">
+            <button class="layer-btn active" data-layer="map" type="button">Map</button>
+            <button class="layer-btn" data-layer="satellite" type="button">Satellite</button>
+            <button class="layer-btn" data-layer="trails" type="button" disabled title="Coming soon">Trails</button>
+          </div>
+          <button id="locate-me" type="button" aria-label="Find my location">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+            </svg>
+          </button>
+        </div>
+      </main>
+
+      <section id="before-you-go">
+        <h2>Before you go</h2>
+        <p>
+          Many shelters on this map sit on Coillte, National Park, or private land. There is
+          <strong>no general legal right of access in Ireland</strong> — a shelter being marked here
+          does not guarantee a right to be on the land around it. Always check the access notes on
+          each shelter, and respect any registration requirements (e.g. Wild Nephin National Park
+          asks hikers to register before an overnight stay).
+        </p>
+        <p>
+          Shelters marked <strong>unverified</strong> have not been confirmed recently — treat their
+          location and condition as provisional and have a backup plan. Conditions change: a shelter
+          shown here may be damaged, removed, or harder to reach than expected.
+        </p>
+        <p>
+          Practice Leave No Trace: carry out what you carry in, don't light fires where not
+          explicitly permitted, and leave the shelter better than you found it for the next hiker.
+        </p>
+        <p id="attribution">
+          Shelter data © TrailHuts contributors and
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>,
+          licensed under <a href="https://opendatacommons.org/licenses/odbl/1.0/" target="_blank" rel="noopener">ODbL</a>.
+          Map tiles by <a href="https://protomaps.com/" target="_blank" rel="noopener">Protomaps</a>.
+        </p>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

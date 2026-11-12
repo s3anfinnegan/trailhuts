@@ -1,0 +1,18 @@
+{
+  "id": "altnabrocky-hut",
+  "name": "Altnabrocky Hut",
+  "type": "bothy",
+  "lat": 54.049822,
+  "lon": -9.608516,
+  "county": "Mayo",
+  "region": "ROI",
+  "owner_or_maintainer": "National Parks",
+  "status": "unverified",
+  "access_notes": "Appears to be in the Nephin Beg range near Wild Nephin National Park, likely under the same registration/first-come-first-served approach as Brogan Carroll Bothy and Lough Avoher Hut — unconfirmed.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/node/3715035560", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "3715035560",
+  "osm_type": "node",
+  "notes": "Surfaced via Overpass query, not previously known to the maintainer. OSM tags this shelter_type=weather_shelter with operator=National Parks; classified here as bothy (enclosed hut) by analogy with nearby Wild Nephin huts, but the type, enclosure, and exact access rules need in-person verification."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "shoddy-hut",
+  "name": "Shoddy Hut",
+  "type": "bothy",
+  "lat": 54.192590,
+  "lon": -5.893682,
+  "county": "Down",
+  "region": "NI",
+  "enclosed": true,
+  "status": "unverified",
+  "access_notes": "OSM tags access=yes. In the Mourne Mountains — fills a known gap in NI coverage, but not previously confirmed firsthand.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/1188673532", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1188673532",
+  "osm_type": "way",
+  "notes": "Surfaced via Overpass query. First Mourne Mountains shelter found — worth cross-checking against other Mourne hiking resources."
+}

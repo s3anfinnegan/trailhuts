@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://trailhuts.ie/schema/shelter.schema.json",
+  "title": "Shelter",
+  "description": "A single trail shelter record in the TrailHuts database.",
+  "type": "object",
+  "required": ["id", "name", "type", "lat", "lon", "region", "status", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable kebab-case slug, matches the filename (without .json)."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": ["lean_to", "bothy", "emergency"]
+    },
+    "lat": {
+      "type": "number",
+      "minimum": 51.3,
+      "maximum": 55.4,
+      "description": "WGS84 latitude. Roughly bounds the island of Ireland."
+    },
+    "lon": {
+      "type": "number",
+      "minimum": -10.7,
+      "maximum": -5.3,
+      "description": "WGS84 longitude. Roughly bounds the island of Ireland."
+    },
+    "grid_ref": {
+      "type": "string",
+      "description": "Original source grid reference, e.g. \"T 074 861\", if that's how the location was recorded."
+    },
+    "grid_system": {
+      "type": "string",
+      "enum": ["irish_grid", "itm"],
+      "description": "Which CRS grid_ref is in: irish_grid = EPSG:29902, itm = EPSG:2157."
+    },
+    "county": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string",
+      "enum": ["ROI", "NI"],
+      "description": "Republic of Ireland or Northern Ireland."
+    },
+    "enclosed": {
+      "type": "boolean"
+    },
+    "fireplace": {
+      "type": "boolean"
+    },
+    "capacity": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "owner_or_maintainer": {
+      "type": "string",
+      "description": "e.g. Mountain Meitheal, NPWS, Coillte, informal."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "unverified", "closed"]
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD)."
+    },
+    "access_notes": {
+      "type": "string",
+      "description": "Permits, registration requirements, private land warnings, etc."
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "additionalProperties": false,
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "osm_id": {
+      "type": "string"
+    },
+    "osm_type": {
+      "type": "string",
+      "enum": ["node", "way"]
+    },
+    "photo": {
+      "type": "object",
+      "required": ["url"],
+      "additionalProperties": false,
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "credit": { "type": "string" },
+        "license": { "type": "string" }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

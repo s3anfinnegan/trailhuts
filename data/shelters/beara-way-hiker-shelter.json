@@ -1,0 +1,17 @@
+{
+  "id": "beara-way-hiker-shelter",
+  "name": "Hiker Shelter (Beara Peninsula)",
+  "type": "lean_to",
+  "lat": 51.966071,
+  "lon": -9.563900,
+  "county": "Cork",
+  "region": "ROI",
+  "owner_or_maintainer": "OPW",
+  "status": "unverified",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/260643077", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "260643077",
+  "osm_type": "way",
+  "notes": "Surfaced via Overpass query, name=\"Hiker Shelter\", operator=OPW, shelter_type=weather_shelter. Coordinates sit on the Beara Peninsula (likely near the Beara Way) but the exact shelter type (open lean-to vs enclosed hut) is a best guess from the name alone — needs in-person verification."
+}

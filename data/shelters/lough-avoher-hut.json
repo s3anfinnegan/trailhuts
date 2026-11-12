@@ -1,0 +1,19 @@
+{
+  "id": "lough-avoher-hut",
+  "name": "Lough Avoher Hut",
+  "type": "bothy",
+  "lat": 54.004222,
+  "lon": -9.620599,
+  "county": "Mayo",
+  "region": "ROI",
+  "enclosed": true,
+  "owner_or_maintainer": "Mountain Meitheal / Wild Nephin National Park",
+  "status": "active",
+  "access_notes": "Inside Wild Nephin National Park / Nephin Beg range. The park asks visitors to register before an overnight stay; shelters are first come, first served.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/node/1874100475", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1874100475",
+  "osm_type": "node",
+  "notes": "OSM spells this 'Lough Aroher Hut' — kept our name as 'Avoher' per known usage; worth confirming which spelling is correct."
+}

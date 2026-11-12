@@ -1,0 +1,254 @@
+:root {
+  --header-bg: #1c2b26;
+  --header-fg: #e8e4da;
+  --accent: #2f5d4f;
+  --chip-bg: #2a3a34;
+  --chip-active-bg: #e8e4da;
+  --chip-active-fg: #1c2b26;
+  --filters-bg: #233631;
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1c1c1c;
+  background: #fafaf7;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Header */
+#header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--header-bg);
+  color: var(--header-fg);
+}
+
+#header .logo {
+  flex-shrink: 0;
+}
+
+#search-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+#search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  background: #ffffff;
+}
+
+#count-button {
+  flex-shrink: 0;
+  background: var(--accent);
+  color: var(--header-fg);
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Filter bar */
+#filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  background: var(--filters-bg);
+}
+
+#type-chips {
+  display: flex;
+  gap: 6px;
+}
+
+.chip {
+  background: var(--chip-bg);
+  color: var(--header-fg);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: var(--chip-active-bg);
+  color: var(--chip-active-fg);
+  border-color: transparent;
+}
+
+#region-select {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--chip-bg);
+  color: var(--header-fg);
+  font-size: 13px;
+}
+
+#has-photo-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--header-fg);
+  cursor: pointer;
+}
+
+/* Map */
+#map {
+  position: relative;
+  flex: 1;
+  min-height: 70vh;
+}
+
+#map-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#layer-switcher {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.layer-btn {
+  border: none;
+  background: #ffffff;
+  padding: 8px 14px;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.layer-btn:last-child {
+  border-bottom: none;
+}
+
+.layer-btn.active {
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.layer-btn:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+#locate-me {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: var(--accent);
+}
+
+/* Shelter popup */
+.shelter-popup h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.shelter-popup .meta {
+  font-size: 12px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.shelter-popup .status-unverified {
+  color: #b23a2e;
+  font-weight: 600;
+}
+
+/* Before you go */
+#before-you-go {
+  padding: 24px 16px 48px;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#before-you-go h2 {
+  font-size: 20px;
+}
+
+#attribution {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Splash screen */
+#splash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: var(--header-bg);
+  color: var(--header-fg);
+  transition: opacity 0.3s ease;
+}
+
+#splash.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#splash-status {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+@media (min-width: 640px) {
+  #header {
+    padding: 10px 20px;
+  }
+  #filters {
+    padding: 8px 20px;
+  }
+}

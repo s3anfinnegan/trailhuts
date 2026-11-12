@@ -1,0 +1,19 @@
+{
+  "id": "brushers-gap",
+  "name": "Brushers Gap Hut",
+  "type": "lean_to",
+  "lat": 53.030970,
+  "lon": -6.288054,
+  "county": "Wicklow",
+  "region": "ROI",
+  "enclosed": false,
+  "owner_or_maintainer": "Mountain Meitheal",
+  "status": "active",
+  "access_notes": "On the Wicklow Way. Open, three-sided lean-to shelter, informal overnight use.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/node/1650372116", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1650372116",
+  "osm_type": "node",
+  "notes": "OSM tags this shelter_type=weather_shelter, but it is physically an open three-sided lean-to like Mucklagh and Mullacor — classified here as lean_to on that basis."
+}

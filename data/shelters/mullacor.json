@@ -1,0 +1,19 @@
+{
+  "id": "mullacor",
+  "name": "Mullacor Hut",
+  "type": "lean_to",
+  "lat": 52.970899,
+  "lon": -6.374152,
+  "county": "Wicklow",
+  "region": "ROI",
+  "enclosed": false,
+  "owner_or_maintainer": "Mountain Meitheal",
+  "status": "active",
+  "access_notes": "On the Wicklow Way. Open, three-sided lean-to shelter, informal overnight use.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/node/1619539857", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1619539857",
+  "osm_type": "node",
+  "notes": "OSM shelter_type=lean_to matches directly — no classification ambiguity here."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mccanns-house-bothy",
+  "name": "McCann's House Bothy",
+  "type": "bothy",
+  "lat": 53.995008,
+  "lon": -9.536616,
+  "county": "Mayo",
+  "region": "ROI",
+  "enclosed": true,
+  "status": "unverified",
+  "access_notes": "OSM tags access=yes. Near Wild Nephin National Park / Nephin Beg, close to Brogan Carroll Bothy and Lough Avoher Hut — possibly under the same park registration approach, unconfirmed.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/1293759191", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1293759191",
+  "osm_type": "way",
+  "notes": "Surfaced via Overpass query, not previously known to the maintainer."
+}

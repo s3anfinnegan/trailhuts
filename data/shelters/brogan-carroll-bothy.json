@@ -1,0 +1,18 @@
+{
+  "id": "brogan-carroll-bothy",
+  "name": "Brogan Carroll Bothy",
+  "type": "bothy",
+  "lat": 53.989336,
+  "lon": -9.572812,
+  "county": "Mayo",
+  "region": "ROI",
+  "enclosed": true,
+  "owner_or_maintainer": "Wild Nephin National Park (NPWS)",
+  "status": "active",
+  "access_notes": "Inside Wild Nephin National Park / Ballycroy. The park asks visitors to register before an overnight stay; shelters are first come, first served.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/158451129", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "158451129",
+  "osm_type": "way"
+}

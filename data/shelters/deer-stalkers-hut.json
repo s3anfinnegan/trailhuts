@@ -1,0 +1,17 @@
+{
+  "id": "deer-stalkers-hut",
+  "name": "The Deer Stalkers Hut",
+  "type": "bothy",
+  "lat": 55.011925,
+  "lon": -8.010911,
+  "county": "Donegal",
+  "region": "ROI",
+  "enclosed": true,
+  "status": "unverified",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/1206912831", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1206912831",
+  "osm_type": "way",
+  "notes": "Surfaced via Overpass query; OSM itself names it 'The Deer Stalkers Hut (bothy)' and tags tourism=wilderness_hut. Lands in Donegal, a known gap area (near Glenveagh) — not previously known to the maintainer, needs in-person verification."
+}

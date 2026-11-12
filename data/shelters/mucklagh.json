@@ -1,0 +1,21 @@
+{
+  "id": "mucklagh",
+  "name": "Mucklagh Hut",
+  "type": "lean_to",
+  "lat": 52.915025,
+  "lon": -6.404764,
+  "grid_ref": "T 074 861",
+  "grid_system": "irish_grid",
+  "county": "Wicklow",
+  "region": "ROI",
+  "enclosed": false,
+  "owner_or_maintainer": "Mountain Meitheal",
+  "status": "active",
+  "access_notes": "On the Wicklow Way. Open, three-sided lean-to shelter, informal overnight use.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/node/1606755282", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "1606755282",
+  "osm_type": "node",
+  "notes": "OSM tags this shelter_type=weather_shelter, but it is physically an open three-sided lean-to like Mullacor and Brushers Gap — classified here as lean_to on that basis. See data/osm-tag-mapping.md."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "trannish-island-bothy",
+  "name": "Trannish Island Bothy",
+  "type": "bothy",
+  "lat": 54.209868,
+  "lon": -7.503969,
+  "county": "Fermanagh",
+  "region": "NI",
+  "enclosed": true,
+  "owner_or_maintainer": "Share Discovery Village",
+  "status": "unverified",
+  "access_notes": "On an island in Upper Lough Erne, associated with the Share Discovery Village outdoor centre. Likely private/group-use for the centre's clients rather than open to general hikers — needs verification before being presented as publicly accessible.",
+  "sources": [
+    { "url": "https://www.openstreetmap.org/way/692946459", "label": "OpenStreetMap" }
+  ],
+  "osm_id": "692946459",
+  "osm_type": "way",
+  "notes": "Surfaced via Overpass query. Flagged for an access check specifically because of the operator — may not belong in a general public-access shelter map if it turns out to be centre-clients-only."
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" width="120" height="32">
+  <g>
+    <path d="M4 26 L14 10 L24 26 Z" fill="none" stroke="#e8e4da" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M4 26 L24 26" stroke="#e8e4da" stroke-width="2.2"/>
+  </g>
+  <text x="32" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#e8e4da" letter-spacing="0.5">TrailHuts</text>
+</svg>
